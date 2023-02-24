@@ -1,27 +1,27 @@
 {% set name = "ghcup" %}
-{% set version = "0.1.18.0" %}
+{% set version = "0.1.19.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://downloads.haskell.org/~ghcup/{{ version }}/aarch64-apple-darwin-ghcup-{{ version }}   # [osx and arm64]
-  sha256: 2d3aa19d6f012c1a4ebc5907a05b06cf0d43a1499107020f59847ea2638c8649    # [osx and arm64]
-  url: https://downloads.haskell.org/~ghcup/{{ version }}/aarch64-linux-ghcup-{{ version }}   # [linux and aarch64]
-  sha256: 3e3ee4aa06e426373fb7e29f1770987ca1621e414925f261f325f9acb77e0bcb   # [linux and aarch64]
-  url: https://downloads.haskell.org/~ghcup/{{ version }}/x86_64-apple-darwin-ghcup-{{ version }}    # [osx and x86_64]
-  sha256: b34ed98bc0cc6d2169974f8d03173f93c3e3f60607013f1af42c9882c1a0d6f0   # [osx and x86_64]
+  url: https://downloads.haskell.org/~ghcup/{{ version }}/aarch64-apple-darwin-ghcup-{{ version }}  # [osx and arm64]
+  sha256: ea1f70a049d15f7d296f9ca1fe788ac4d9120c7962edce9aacbbaf06f70095d6  # [osx and arm64]
+  url: https://downloads.haskell.org/~ghcup/{{ version }}/aarch64-linux-ghcup-{{ version }}  # [linux and aarch64]
+  sha256: 7ab3606f3de49c363444dd5879edde27a3e7df0adbd981a8c12a153861fde271  # [linux and aarch64]
+  url: https://downloads.haskell.org/~ghcup/{{ version }}/x86_64-apple-darwin-ghcup-{{ version }}  # [osx and x86_64]
+  sha256: b0ee8f9604810b51253754dca326bc03592e2b866bf1177755de102f26e729d8  # [osx and x86_64]
   url: https://downloads.haskell.org/~ghcup/{{ version }}/x86_64-linux-ghcup-{{ version }}  # [linux and x86_64]
-  sha256: 94559eb7c4569919446af1597d07675e803c20b150323edb7f9d8601c8bbda50  # [linux and x86_64]
+  sha256: 25b7fc417c1a811dd7ff439b67ea647a59cf5b8d71b274f97e917d50b2150d5b  # [linux and x86_64]
   url: https://downloads.haskell.org/~ghcup/{{ version }}/x86_64-mingw64-ghcup-{{ version }}.exe  # [win]
-  sha256: e2166a50437c677dfab3362749f676f92ff786aae1bfd7a2d289efa3544ee654   # [win]
+  sha256: 8cac0e2cbd1ffe8609fc457ac491dea3b98d9332966a46b8f643a6d42ffc22b1  # [win]
   fn: ghcup  # [not win]
-  fn: ghcup.exe   # [win]
+  fn: ghcup.exe  # [win]
 
 build:
   number: 0
-  binary_relocation: False
+  binary_relocation: false
 
 requirements:
   run:
